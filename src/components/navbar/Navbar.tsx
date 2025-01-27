@@ -1,8 +1,6 @@
-import { Link, useNavigate } from "react-router-dom"
+import { Link} from "react-router-dom"
 
 function Navbar() {
-
-    // const navigate = useNavigate();
 
     return (
         <>
@@ -13,6 +11,8 @@ function Navbar() {
                     <Link to='/home' className="text-2xl font-bold">Farmacia ParaSeuBem</Link>
 
                     <div className='flex gap-4'>
+                    <Link to='/categorias' className='hover:underline'>Categorias</Link>
+                    <Link to='/cadastrarcategoria' className='hover:underline'>Cadastrar categoria</Link>
                     </div>
                 </div>
             </div>

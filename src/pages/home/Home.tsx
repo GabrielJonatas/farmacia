@@ -1,5 +1,5 @@
-//import ListaPostagens from "../../components/postagens/listapostagens/ListaPostagens"
-//import ModalPostagem from "../../components/postagens/modalpostagem/ModalPostagem"
+import ListaCategorias from "../../components/categorias/listarcategorias/ListarCategorias"
+import ModalCategoria from "../../components/categorias/modalcategoria/ModalCategoria"
 
 function Home() {
     return (
@@ -15,6 +15,9 @@ function Home() {
                         </p>
 
                         <div className="flex justify-around gap-4">
+                            <div className="flex justify-around gap-4">
+                                <ModalCategoria />
+                            </div>
                         </div>
                     </div>
 
@@ -28,6 +31,7 @@ function Home() {
                 </div>
             </div>
 
+            <ListaCategorias />
         </>
     )
 }
